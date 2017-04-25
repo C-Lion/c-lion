@@ -1,0 +1,28 @@
+/*{*/
+  "name": "c-lion",
+  "version": "1.0.0",
+  "description": "c-lion's website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sethbergman/c-lion.git"
+  },
+  "author": "Seth Bergman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sethbergman/c-lion/issues"
+  },
+  "homepage": "https://github.com/sethbergman/c-lion#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "consolidate": "^0.14.1",
+    "express": "^4.13.4",
+    "mustache": "^2.2.1",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.3.0"
+  }
+}
