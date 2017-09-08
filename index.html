@@ -1,0 +1,273 @@
+<!doctype html>
+<!--
+https://validator.w3.org/nu/#textarea
+Document checking completed. No errors or warnings to show.
+Wed Apr 26 0:20
+-->
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
+
+		<link 
+			rel="stylesheet" 
+			href="prism-atom-dark.css" 
+			type="text/css" 
+			media="screen" 
+		/>
+
+		<script type="text/javascript" src="prism.js"></script>
+		<script type="text/javascript" src="prism.ruby.js"></script>
+
+		<title>C-Lion</title>
+		<meta name="description" content="C-Lion is a professional software
+				engineer specializing in full-stack development. C-Lion has 
+				experience designing databases and web applications.">
+
+	</head>
+
+	<body>
+	<div class = "about-container">
+		<ul>
+			<li><a href="#" class="nav-link">About</a></li>
+			<li><a href="#code-samples" class="nav-link">Code Snippets</a></li>
+			<li><a href="#web-apps" class="nav-link">Web Apps</a></li>
+			<li><a href="#skills-and-tools" class="nav-link">Skills &amp; Tools</a></li>
+			<li class="hire-me"><a href="#hire-me" class="nav-link">HIRE ME</a></li>
+		</ul>
+
+		<div class="about">
+			<img src="images/me.jpg" alt="A small orange tabby cat is looking into a large oval mirror and sees a huge fully-mained lion." class="me" />
+			<h1>C-Lion</h1>
+			<h2>SOFTWARE ENGINEER</h2>
+			<hr class="grey" />
+			<p class="bio">
+				C-Lion is a software developer and HCI designer, specializing 
+				in technical educational software and web applications. After
+				designing an online math learning center for Mercy College and 
+				teaching online computer science courses for the Michigan Jewish Institute,
+				managing the the technical team for the deployment of a MOOC course
+				and adminstering the NovoEd site for the Open Doors Group's MOOC course
+				has been a more recent project. 
+			</p>	
+			<p class="bio">	These software applications are influenced by years of expertise
+				as an electronics and maintenance technician keeping the runways open at 
+				NYC's JFK and LaGuardia airports and maintaining a fleet of over 500 vehicles
+				in a high state of readiness for the immediate deployment of a US Army 
+				mobile general hospital. In both cases, there was a constant need for creating 
+				new technical training, both in digital form and "on the job". 
+			</p>
+		</div>
+
+	</div>
+
+
+		<h3 id="code-samples">Code Snippets</h3>
+		<hr class="yellow" />
+
+		<div class="box">
+			<h4>Temperature Conversion</h4>
+			<p>
+				This ruby program will prompt the user for a temperature in degrees Celsius and let the user know what the corresponding temperature is in Fahrenheit.
+			</p>
+		</div>
+
+		<div class="box">
+		
+<pre><code class="language-ruby">
+def celsius_to_fahrenheit(celsius)
+	return celsius * 1.8 + 32
+end
+
+puts &quot;What is the temperature in Celsius? &quot;
+celsius = gets.chomp.to_f 
+
+puts &quot;You said the temperature is #{celsius} Celsius.&quot;
+puts &quot;That means the real temperature is #{celsius_to_fahrenheit(celsius)} Fahrenheit.&quot;</code></pre>	
+		</div>
+
+		<br class="clear" />
+
+
+
+		<div class="box">
+		<pre><code class="language-ruby">
+def position(n)
+	if n == 0
+		return &quot;Take a new number please. An error has occured and you are not on the wait list yet. &quot;
+	elsif n &gt; 10 &amp;&amp; n &lt; 20
+		return &quot;You are in #{n}th place on the wait list. &quot;
+	elsif n % 10 == 1
+			return &quot;You are in #{n}st place on the wait list. &quot;
+	elsif n % 10 == 2
+			return &quot;You are in #{n}nd place on the wait list. &quot;
+	elsif n % 10 == 3
+			return &quot;You are in #{n}rd place on the wait list. &quot;		
+	else
+			return &quot;You are in #{n}th place on the wait list. &quot;
+	end
+end
+
+	
+puts &quot;Enter your ticket number. &quot;
+ticket = gets.to_i
+puts ticket
+
+puts position(ticket)
+		</code></pre>
+		</div>
+
+		<div class="box">
+			<h4>Ordinal Challenge</h4>
+			<p>
+				This ruby program will convert a plain number to the ordinal of that number. So for example, if the user enters 2, it will display 2nd. If the user enters 3 it will display 3rd, etc.
+			</p>
+		</div>
+
+		<br class="clear" />
+
+
+
+		<div class="box">
+		<h4>Foo-Bar</h4>
+			<p> 
+				This ruby program is an adaptation of the classic technical interview problem which displays sequences of the the Foo-Bar pattern. 
+			</p>
+		</div>
+
+		<div class="box">
+			<pre><code class="language-ruby">
+def fooBar(n)
+	n.times do |n|
+		n = n + 1
+		if n % 3 == 0 &amp;&amp; n % 5 == 0
+			puts &quot;FooBar&quot;
+		elsif n % 3 == 0 
+			puts &quot;Foo&quot;
+		elsif n % 5 == 0
+			puts &quot;Bar&quot;
+		else 
+			puts n
+		end	
+	end
+end
+
+	
+puts &quot;How many times to play? Please enter a number greater than zero. &quot;
+times = gets.to_i
+
+puts fooBar(times)
+			</code></pre>
+		</div>
+
+		<br class="clear" />
+
+
+
+		<h3 id="web-apps">Web Apps</h3>
+		<hr class="yellow" />
+
+		<div class="box">
+			<h4>Quote Generator</h4>
+			<img src="images/webApps/splurty.png" alt="Picture representing the quote generator application." class="full-width">
+			<p>
+				A database powered quote generator with a mobile-first design, using the Ruby on Rails framework, HTML, and CSS. Uses Git and GitHub for version control, and launched on Heroku.
+			</p>
+
+		</div>
+
+		<div class="box">
+			<h4>Yelp CLone</h4>
+			<img src="images/webApps/nomster.png" alt="Picture of starting page of Yelp Clone application." class="full-width">
+			<p>
+				A yelp clone that integrates with the Google Maps API and includes features like user comments, star ratings, image uplaoding, and user authentication.
+			</p>
+	
+		</div>
+
+		<br class="clear" />
+
+
+		<div class="box">
+			<h4>Two-Sided Market Place</h4>
+			<img src="images/webApps/flixter.png" alt="Picture of the start page of the Two-Sided marketplace application." class="full-width">
+			<p>
+				A two-sided, video-streaming marketplace
+ 				platform that features credit card payment capabilities, user role manangement, complex user interfaces, and advanced database relationships. 
+		</div>
+
+		<div class="box">
+			<h4>Test Driven Development</h4>
+			<img src="images/webApps/grammable.png" alt="Screenshot from a test-driven development project." class="full-width">
+			<p>
+				An Instagram clone that was built usign industry-standard test-driven development following numerous red/green/refactor cycles. 
+			</p>
+	
+		</div>
+
+		<br class="clear" />
+
+		<div class="box">
+			<h4>Single Page ToDo Application</h4>
+			<img src="images/webApps/todoster.png" alt="Screenshot of a To Do list application." class="full-width">
+			<p>
+				This single-page to-do application features a fluid user interface that- by using JavaScript- allows users to rapidly add dynamic content.
+			</p>
+
+		</div>
+
+		<div class="box">
+			<h4>Agile Team Project</h4>
+			<img src="images/webApps/chess.png" alt="Screenshot of an application built using Agile." class="full-width">
+			<p>
+				Worked on an Agile software development team building a chess application. Under the guidance of a senior sowftware engineer, we had weekly Agile team meetings for code reviews, sprint planning, and feature assignments.
+			</p>
+	
+		</div>
+
+		<br class="clear" />
+
+
+		<h3 id="skills-and-tools">Skills &amp; Tools</h3>
+		<hr class="yellow" />
+
+		<p class="skills-and-tools">
+			C-Lion has learned to not only how to survive in the relatively warm waters off the coast of San Francisco but simultaneously gained proficiency and expertise in the following programming languages and comfort with the following tools:
+		</p>
+			
+		<div class="icons">
+			<img src="images/tools/github-fa.png" alt="GitHub company Logo." class="icon"/>
+			<img src="images/tools/slack.png" alt="Slack company logo." class="icon" />
+			<img src="images/tools/opc.png" alt="Operation Code logo." class="icon"/>
+			<img src="images/tools/trello.png" alt="Trello logo." class="icon" />
+			<img src="images/tools/Gitter_logo.png" alt="Gitter company logo." class="icon" />
+			<img src="images/tools/AzureLogo.png" alt="Microsoft Azure logo." class="icon" />
+
+
+			<br class="clear" />
+			<img src="images/tools/skills.png" alt="Single picture containing icons for html/css, Ruby, Rails, Algorithms, and Javascript." class="icons" />
+
+
+		</div> 
+
+
+		<div class="contact-me" id="hire-me">
+			<h3 class="contact-headline">Contact</h3>
+			<hr class="yellow" />
+			
+			<p class="contact-info">
+				Currently entertaining new opportunities. 
+				Please get in touch via email:
+			</p>
+			<p>
+				<a href="mailto:C.Lion@globalizard.com" class="contact-link">
+				C.Lion@globalizard.com
+				</a>
+			</p>
+		</div>
+	</body>
+</html>
+
+	
